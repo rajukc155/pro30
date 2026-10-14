@@ -1,0 +1,151 @@
+/* Cart and layout styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #232f3e;
+  color: white;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+button {
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #ffa41c;
+  color: #111;
+}
+
+.btn-secondary {
+  background-color: #ffd814;
+  color: #111;
+}
+
+.btn-cart-link {
+  background-color: #37475a;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.message {
+  color: #007600;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Cart table styling */
+#cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#cart-table th, #cart-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+#cart-table th {
+  background-color: #f2f2f2;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 16px;
+  background: #fff;
+}
+
+.product-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.product-image {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #f5f5f5;
+}
+
+.product-image-large {
+  width: 100%;
+  max-width: 420px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 20px;
+  background: #f5f5f5;
+}
+
+.product-content {
+  flex: 1;
+}
+
+.product-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-title a {
+  color: #111;
+  text-decoration: none;
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #b12704;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.order-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.quantity-selector {
+  margin: 20px 0;
+}
+
+.cart-summary {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 1.2em;
+  font-weight: bold;
+}

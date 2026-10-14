@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details - EC Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">EC Shop</a></h1>
+    <nav>
+      <a href="cart.html" class="btn-cart-link">🛒 View Cart</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div id="product-detail">
+      <h2 id="product-name"></h2>
+      <p id="product-price"></p>
+      <p id="product-description"></p>
+
+      <div class="quantity-selector">
+        <label for="quantity">Quantity: </label>
+        <input type="number" id="quantity" value="1" min="1">
+      </div>
+
+      <div class="action-buttons">
+        <!-- Existing feature: Direct order button from detail page -->
+        <button id="order-button" class="btn-primary">Place Order</button>
+
+        <!-- Added in this update: Add to Cart button -->
+        <button id="add-to-cart-button" class="btn-secondary">Add to Cart</button>
+      </div>
+
+      <!-- Message container for cart updates -->
+      <p id="cart-message" class="message"></p>
+    </div>
+  </main>
+
+  <script src="detail.js"></script>
+</body>
+</html>
